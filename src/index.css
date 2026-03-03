@@ -32,3 +32,77 @@
 .animate-floatGlow {
   animation: floatGlow 6s ease-in-out infinite;
 }
+/* ================= DARK CALENDAR COMPLETE FIX ================= */
+
+.react-calendar {
+  width: 100%;
+  background-color: #0f172a !important;
+  border: none !important;
+  color: white !important;
+  font-family: inherit;
+}
+
+/* Remove inner white background */
+.react-calendar__viewContainer,
+.react-calendar__month-view,
+.react-calendar__month-view__days {
+  background-color: #0f172a !important;
+}
+
+/* Header navigation */
+.react-calendar__navigation {
+  background-color: #111827 !important;
+  border-bottom: 1px solid #1f2937;
+}
+
+.react-calendar__navigation button {
+  color: #60a5fa !important;
+  font-weight: 600;
+  background: transparent !important;
+}
+
+.react-calendar__navigation button:hover {
+  background: #1e293b !important;
+}
+
+/* Weekday labels */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: 600;
+  color: #94a3b8 !important;
+  background-color: #0f172a !important;
+}
+
+/* All day tiles */
+.react-calendar__tile {
+  background: transparent !important;
+  color: #e5e7eb !important;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.react-calendar__tile:hover {
+  background: #1e293b !important;
+}
+
+/* Today's date */
+.react-calendar__tile--now {
+  background: #1d4ed8 !important;
+  color: white !important;
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+/* Weekend color */
+.react-calendar__month-view__days__day--weekend {
+  color: #f87171 !important;
+}
+
+/* Remove white focus outline */
+.react-calendar button:enabled:focus {
+  outline: none;
+}
